@@ -1,0 +1,572 @@
+* {
+    font-family: "Poppins", "sans-serif";
+    font-weight: normal!important;
+    box-sizing: border-box!important;
+    outline: none!important;
+}
+
+::placeholder {
+    font-weight: normal !important;
+    color: #ccc;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: #313131!important;
+    padding: 1em;
+}
+
+body {
+    /* background-color: #fff!important; */
+    color: #212121!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    row-gap: 0em;
+    padding: none;
+    margin: 0em;
+    max-width: 425px!important;
+    min-height: 100%;
+    /* background-image: url(../polling/index.html); */
+    /* border-radius: 20px!important; */
+    margin: auto!important;
+    border: 0px solid #212121!important;
+}
+
+i,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0em !important;
+}
+
+.drop-down {
+    background-color: #212121;
+    color: #fff;
+    border: 0px;
+    padding: 0em;
+    margin: 0em;
+}
+
+.drop-down:hover {
+    background-color: #212121;
+}
+
+.dropdown-menu.show {
+    background-color: #fff;
+    color: #212121!important;
+    border: 1px solid #212121;
+}
+
+.drop-down-options {
+    /* background-color: #fff; */
+    color: #212121;
+    border: 0px;
+}
+
+.list {
+    width: 8em;
+    margin: 0em;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+a {
+    color: #fff!important;
+    text-decoration: none !important;
+    margin: 0.3em !important;
+}
+
+.list>a {
+    color: #212121!important;
+    text-decoration: none !important;
+    margin: 0.5em 0.3em !important;
+}
+
+.icon {
+    margin-right: 0.5em !important;
+}
+
+row {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: center!important;
+    padding: 0.5em;
+    column-gap: 1em;
+}
+
+column,
+.column {
+    display: flex;
+    justify-content: center;
+    /* justify-content: right; */
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    row-gap: 1em;
+}
+
+.button {
+    color: #fff;
+    background-color: #212121;
+    width: 5em;
+    height: 2.5em;
+    border: 0px;
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+
+.button:active {
+    background-color: #fff;
+    color: #212121;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* form {
+    background-color: #212121;
+    color: #fff;
+    padding: 2em 1em!important;
+    border-radius: 20px;
+    margin: auto;
+} */
+
+form a,
+form p {
+    color: #fff!important;
+}
+
+.input {
+    color: #212121;
+    background-color: #fff;
+    /* border: 1px solid #0c5c36; */
+    border: none;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    width: 13em!important;
+}
+
+.input:focus {
+    border: 2px solid #212121;
+}
+
+.submit {
+    background-color: #212121;
+    color: #fff;
+    padding: 0.5em 1em!important;
+    border: none;
+    border-radius: 10px;
+}
+
+.header {
+    top: 0;
+    padding: 1.5em 1em!important;
+    width: 100%;
+    position: sticky;
+    z-index: 20;
+    color: #fff!important;
+    background-color: #212121;
+    border-radius: none;
+    /* border-top-right-radius: 20px!important;
+    border-top-left-radius: 20px!important; */
+    row-gap: 0em;
+    padding-bottom: 0.5em!important;
+}
+
+.header row {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.footer {
+    color: #fff!important;
+    background-color: #212121;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+    justify-self: left!important;
+    margin-top: 0.5em;
+}
+
+.posts {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    justify-content: right;
+    padding: 0px!important;
+}
+
+.posts::-moz-scrollbar {
+    width: 12px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.posts::-moz-scrollbar-thumb {
+    height: 1em!important;
+    background-color: #212121;
+    border: none;
+}
+
+.posts::-moz-scrollbar-track {
+    background-color: #fff;
+    border: none;
+}
+
+.posts::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+}
+
+.posts::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.posts::-webkit-scrollbar-thumb {
+    height: 1em!important;
+    border-radius: 10px;
+    background-color: #212121;
+    border: none;
+}
+
+.posts a {
+    width: 100%;
+    padding-left: 1em;
+}
+
+.add {
+    color: #212121!important;
+    width: 100%;
+    text-align: left!important;
+}
+
+.col {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create {
+    width: 100%;
+    height: 70%;
+}
+
+.create form {
+    width: 100%;
+    height: 100%;
+}
+
+.post {
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.post:focus {
+    border: none;
+}
+
+.post::placeholder {
+    font-size: 1.2em;
+}
+
+.right {
+    width: 100%;
+    justify-content: right!important;
+    align-items: center!important;
+}
+
+.profile {
+    color: #212121;
+    width: 100%;
+    height: 100%!important;
+    margin: auto;
+}
+
+.create row,
+.profile row {
+    justify-content: left;
+    align-items: start;
+    width: inherit;
+    padding-left: 1em;
+    color: #212121;
+}
+
+.profileUser {
+    font-size: 400%;
+}
+
+.leftText {
+    width: 100%;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.logout {
+    margin: auto!important;
+}
+
+.renderPost {
+    color: #212121;
+    border-top: 1em;
+    border-bottom: 0px!important;
+    border-left: 0px!important;
+    border-right: 0px!important;
+    border-color: #ddd;
+    border-style: solid;
+    width: 100%;
+    padding: 0em;
+}
+
+.renderPost .row {
+    width: 100%!important;
+    display: flex;
+    flex-direction: row!important;
+    align-items: center;
+    /* column-gap: 0.5em; */
+    padding: 0.5em;
+    padding-top: 1.5em;
+    padding-left: 1em;
+}
+
+.renderPost .row>* {
+    display: inline-block;
+    width: auto;
+    padding: 0px!important;
+}
+
+.renderPost .row div .dropdown button {
+    background-color: #fff!important;
+    color: #212121!important;
+}
+
+.renderPost .row div .dropdown ul li {
+    font-size: 0.8em;
+    margin: 0.5em 0.3em;
+}
+
+.renderPost .row div .dropdown ul.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 0.5em;
+    min-width: fit-content!important;
+}
+
+.header-heading {
+    font-size: 1.2em;
+}
+
+.text {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    font-size: 0.8em;
+    text-align: left;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 0em 1.3em!important
+}
+
+.text::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.text::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.text::-webkit-scrollbar-track {
+    display: none;
+}
+
+.text::-moz-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.text::-moz-scrollbar-thumb {
+    display: none;
+}
+
+.text::-moz-scrollbar-track {
+    display: none;
+}
+
+.postTime {
+    font-size: 0.7em;
+    margin-left: auto!important;
+    margin-right: 1em!important;
+}
+
+.text+div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.hundred {
+    background-color: #fff;
+    color: #212121;
+    width: 100%;
+}
+
+.comment-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 0.8em;
+    background-color: #fff;
+    color: #212121;
+    min-width: 100%!important;
+    padding: 1em 0.5em;
+    border: 1px solid #ccc;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+.comment-flex:hover {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 0.8em;
+    background-color: #fff;
+    color: #212121;
+    min-width: 100%!important;
+    padding: 1em 0.5em;
+    border: 1px solid #ccc;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+.comment-flex>* {
+    justify-self: center;
+    width: fit-content;
+}
+
+#postContainer {
+    row-gap: 0em;
+}
+
+.renderPost div .hundred ul.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* padding-left: 0.5em; */
+    min-width: 100%!important;
+    border: none;
+    border-radius: 0px;
+}
+
+form.row {
+    column-gap: 1em;
+    padding: 1em!important;
+}
+
+.commentinput {
+    border-radius: 5px;
+    border: none;
+    padding: 1em!important;
+    background-color: #fff;
+    color: #212121;
+    outline: none;
+    width: 100%!important;
+}
+
+.commentsubmit {
+    border-radius: 5px;
+    border: none;
+    width: 5em!important;
+    padding: 1em!important;
+    background-color: #212121;
+    color: #fff;
+}
+
+.commentinput::placeholder {
+    color: #888!important;
+}
+
+.commentRow,
+.commentsDiv {
+    width: 100%!important;
+    padding: 0em 1em!important;
+}
+
+.commentsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: start;
+    row-gap: 0.5em;
+}
+
+.commentRow {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    column-gap: 0.5em;
+    padding: 1em 0.5em!important;
+    border: none;
+    background-color: #ccc;
+    border-radius: 10px;
+    width: fit-content!important;
+}
+
+.commentCont {
+    /* border-top: 1px solid #ccc!important; */
+    border-bottom: 2px solid #ccc!important;
+}
+
+strong {
+    font-weight: bold!important;
+    align-self: flex-start!important;
+}
+
+.commentEditDel {
+    width: fit-content!important;
+    margin: none!important;
+    /* justify-self: end; */
+    /* justify-self: right; */
+    justify-items: right;
+    align-self: flex-start!important;
+}
+
+ul {
+    z-index: 10!important;
+}
+
+.like {
+    z-index: 15!important;
+}
+
+.commentform {
+    margin-left: 0.5em!important;
+    /* margin-right: 1em!important; */
+    /* padding-right: 2em!important; */
+}
